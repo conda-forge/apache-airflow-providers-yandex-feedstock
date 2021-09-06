@@ -23,7 +23,7 @@ requirements:
   run:
     - apache-airflow >=2.1.0
     - python >=3.6
-    - yandexcloud >=0.22.0
+    - yandexcloud >=0.97.0
 
 test:
   imports:
