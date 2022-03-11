@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-yandex" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-yandex-{{ version }}.tar.gz
-  sha256: a1bead2f24c9f15fa317135d5588a98379c4c3449e87e34ceb3f4a709a04a937
+  sha256: b96f79ac3000e6177af21852036163a68a94915a2d61efeffd0b93802edc5589
 
 build:
   number: 0
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.7
     - apache-airflow >=2.1.0
-    - yandexcloud >=0.122.0
+    - yandexcloud >=0.146.0
 
 test:
   imports:
