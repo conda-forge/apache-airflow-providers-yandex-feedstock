@@ -5,7 +5,7 @@ Home: https://airflow.apache.org/
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-airflow-providers-yandex-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-airflow-providers-yandex-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provider for Yandex including Yandex.Cloud for Apache Airflow
 
@@ -19,8 +19,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12053&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-airflow-providers-yandex-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12053&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-airflow-providers-yandex-feedstock?branchName=main">
       </a>
     </td>
   </tr>
