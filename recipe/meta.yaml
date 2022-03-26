@@ -10,9 +10,9 @@ source:
   sha256: abf77b5a879730b04b48a9593115b8c9bb24de8f098721826f2f0b64f89146ef
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
@@ -35,9 +35,10 @@ test:
 
 about:
   home: https://airflow.apache.org/
-  summary: Provider for Yandex including Yandex.Cloud for Apache Airflow
+  summary: Provider for Apache Airflow. Implements apache-airflow-providers-yandex package
   license: Apache-2.0
   license_file: LICENSE
+  license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-yandex/stable/index.html
   dev_url: https://github.com/apache/airflow/
 
