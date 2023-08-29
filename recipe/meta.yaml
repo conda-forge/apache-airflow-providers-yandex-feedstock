@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-yandex" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/apache-airflow-providers-yandex-{{ version }}.tar.gz
-  sha256: 6d90fa34fc65445a3402f912bea908f89d0d885dbe46cdae96806379d03cb5b2
+  sha256: 4edd76c210c9ba52ed5dc7e047c5b721046e6f0f2042891ae383c3724c364cce
 
 build:
   noarch: python
