@@ -20,10 +20,10 @@ requirements:
     - flit-core >=3.2,<4
     - pip
   run:
-    - yandex-query-client >=0.1.2
     - python >=3.8
     - apache-airflow >=2.6.0
     - yandexcloud >=0.228.0
+    - yandex-query-client >=0.1.2
 
 test:
   imports:
