@@ -1,5 +1,5 @@
 {% set name = "apache-airflow-providers-yandex" %}
-{% set version = "4.0.2" %}
+{% set version = "4.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_yandex-{{ version }}.tar.gz
-  sha256: f52e974eafeccf2d14f99eeffff27aa990e77942e2ab3cb8ed181f4e9cce8e5d
+  sha256: 49eae8d592016f52b1a8948b808d062f8bcc1a6ae834b20b21f2cf0db6cdb882
 
 build:
   noarch: python
@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - flit-core ==3.11.0
+    - flit-core ==3.12.0
     - pip
   run:
     - python >={{ python_min }}
