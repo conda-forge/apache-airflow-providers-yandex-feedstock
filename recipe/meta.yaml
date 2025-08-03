@@ -21,7 +21,7 @@ requirements:
     - flit-core ==3.12.0
     - pip
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<3.13
     - apache-airflow >=2.10.0
     - yandexcloud >=0.308.0
     - yandex-query-client >=0.1.4
