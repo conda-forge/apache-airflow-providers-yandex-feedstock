@@ -1,6 +1,5 @@
 {% set name = "apache-airflow-providers-yandex" %}
-{% set version = "4.2.0" %}
-{% set python_min = "3.10" %}
+{% set version = "4.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/apache_airflow_providers_yandex-{{ version }}.tar.gz
-  sha256: 86ae6cbd0eeab272426d7c37607d07d98f2e797675df2326aa4d6d2cee7fd186
+  sha256: 17d6709f4f995fb0a86f4565461e32374e22ee1f7a17aeb299a7345a23ff20a8
 
 build:
   noarch: python
@@ -23,8 +22,11 @@ requirements:
   run:
     - python >={{ python_min }},<3.13
     - apache-airflow >=2.10.0
+    # more restrictive for python <3.13
     - yandexcloud >=0.308.0
+    # more restrictive for python <3.13
     - yandex-query-client >=0.1.4
+    - apache-airflow-providers-common-compat >=1.8.0
 
 test:
   imports:
@@ -39,7 +41,9 @@ about:
   home: https://github.com/apache/airflow/
   summary: Provider package apache-airflow-providers-yandex for Apache Airflow
   license: Apache-2.0
-  license_file: src/airflow/providers/yandex/LICENSE
+  license_file:
+    - LICENSE
+    - NOTICE
   license_family: Apache
   doc_url: https://airflow.apache.org/docs/apache-airflow-providers-yandex/stable/index.html
   dev_url: https://github.com/apache/airflow/
