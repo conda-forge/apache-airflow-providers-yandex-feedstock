@@ -27,12 +27,12 @@ requirements:
     - yandexcloud >=0.308.0
     # more restrictive for python <3.13
     - yandex-query-client >=0.1.4
-    - apache-airflow-providers-common-compat >=1.8.0
+    - apache-airflow-providers-common-compat >=1.12.0
 
 tests:
   - python:
       imports:
-        - airflow.providers.yandex
+      - airflow.providers.yandex
       pip_check: true
       python_version: ${{ python_min }}.*
 
