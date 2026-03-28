@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-yandex
-  version: 4.4.1
+  version: "4.4.1"
 
 package:
   name: ${{ name|lower }}
@@ -23,10 +23,12 @@ requirements:
   run:
     - python >=${{ python_min }}
     - apache-airflow >=2.11.0
-    - yandexcloud >=0.328.0
+    # more restrictive for python >=3.13
+    - yandexcloud >=0.376.0
     - yandex-query-client >=0.1.4
     - apache-airflow-providers-common-compat >=1.13.0
     - grpcio >=1.70.0
+
 tests:
   - python:
       imports:
