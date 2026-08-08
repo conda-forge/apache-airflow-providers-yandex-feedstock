@@ -1,6 +1,6 @@
 context:
   name: apache-airflow-providers-yandex
-  version: "4.5.0"
+  version: "4.5.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/apache_airflow_providers_yandex-${{ version }}.tar.gz
-  sha256: 0c33c6a0260883b4693f7962a64ac98309158cceb78d0c04a207d7c3b593cbf2
+  sha256: 65217dc33e6363548c43f96a5d1adeed1cefb1ca097c297b4947d85169c48a43
 
 build:
   noarch: python
